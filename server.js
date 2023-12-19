@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
-const MONGODB_URI = 'mongodb://127.0.0.1:27017/yogaDB'; 
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const app = express();
 const PORT = process.env.PORT || 3001;
